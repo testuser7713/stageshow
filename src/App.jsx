@@ -2,7 +2,7 @@ import { useState } from 'react'
 //import './App.css'
 import { Routes, Route, HashRouter} from "react-router-dom";
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import viteLogo from '/vite.svg'
 
 
 import Navbar from "./components/Navbar";
