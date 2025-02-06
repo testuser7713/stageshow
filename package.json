@@ -8,7 +8,7 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://testuser7713.github.io/react-sqlite-app",
+  "homepage": "https://testuser7713.github.io/stageshow",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
