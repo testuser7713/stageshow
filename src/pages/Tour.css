@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Antonio-Light';
+    src: url('../fonts/Antonio-Light.ttf') format('truetype');
+    font-style: normal;
+}
+
+.shape {
+    border: none;
+}
+
+.tour_map_con {
+    font-family: 'Antonio-Light';
+}
+
+.tour_map_con {
+    font-size: 20px;
+}
+
+
+
+.tour_map, .image-display-container {
+    margin-top: 10rem;
+}
+.tour_map_con {
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    background-color: black;
+}
+
+/*.sections {
+    height: 10rem; 
+    display: flex;
+    /*flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #e60f0f;
+    box-sizing: border-box;
+  }
+  
+.tour img :not(.tour_layout){
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid green;
+}*/
+
+
+
+
+.seat_details {
+    color: white;
+    width: 100%;
+}
+
+
+.slider_con {
+    justify-content: space-evenly;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.tour_map_con {
+    display: flex;
+}
+
+.tour_left {
+    width: 57vw;
+}
+
+.selected_text {
+    color: white;
+}
+
+.tour_right {
+    width: 40vw;
+    justify-content: center;
+}
+
+.seat_select {
+    top: 2rem;
+    justify-content: center;
+}
+
+.seat_select_con {
+    display: flex;
+    justify-content: center;
+}
+
+.seat_select img{
+    height: 15.5rem;
+    width: auto;
+    margin-left: -0.25rem;
+    margin-top: -0.4rem;
+
+}
+
+
+.selected_seat_main {
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+}
+.seat_sub_con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.seat_sub {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    font-size: 1.5rem;
+}
+
+
+
+.seat_sub div p{
+    justify-self: center;
+}
+.seat_sub div p strong{
+    color: #f8c66a;
+    font-size: 2.5rem;
+
+}
+
+.align-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.back_tourmain {
+	color: white;
+    background: none;
+    margin-left: 5rem;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.back_tourmain:hover {
+	color: rgb(255, 239, 159);
+    background: none;
+    transition: 0.3s ease-in-out;
+    margin-left: 5rem;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.add_cart_con {
+    justify-content: center;
+    display: flex;
+}
+.checkout_but {
+    margin-top: 0rem;
+    box-shadow: none;
+    color: black;
+    background: none;
+    margin-top: 0rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+    background-color: rgb(255, 239, 159);
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .checkout_but:hover {
+    background-color: rgb(255, 193, 159);
+    transition: 0.3s ease-in-out;
+
+  }
+
+
+
+  .seat_sub {
+    padding-bottom: 0rem;
+  }
+
+  .select_sec_text {
+    color: white;
+  }
+
+  .select_text_con {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+  }
+
+
+
+.tour_page {
+    background-color: black;
+    padding-top: 8rem;
+    font-family: 'Antonio';
+
+}
+
+
+.tour_details {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;            /* Center vertically */
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    
+}
+
+
+
+.tour_name_con {
+    flex-grow: 1;                   /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    justify-content: center;        /* Center content vertically */
+    align-items: center;            /* Center content horizontally */
+}
+
+.venue_con {
+    margin-right: auto;             /* Keep it to the left */
+}
+
+.amer_air {
+    width:100%;
+}
+
+.p-4 {
+    color: white;
+
+}
+
+.select_but {
+    font-family: Antonio;
+    font-size: 15px;
+}
+
+.seat_ind {
+    padding-bottom: 15px;
+}
+
+.slider_text {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    color: #c61c1d;
+}
+
+.slider {
+    appearance: none; /* Remove default styling */
+    height: 30px; /* Adjust height as needed */
+    background: transparent; /* Track background color */
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+
+}
+
+.slider::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #c61c1d, #c61c1d); /* Track gradient color */
+    border-radius: 5px;
+    height: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none; /* Remove default thumb styling */
+    width: 15px;
+    height: 15px;
+    background: #c61c1d; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff; /* Optional border */
+    margin-top: -2.5px; /* Center the thumb */
+}
+
+.slider::-moz-range-track {
+    background: linear-gradient(90deg, #c61c1d, #c61c1d);
+    border-radius: 5px;
+    height: 6px;
+}
+
+.slider::-moz-range-thumb {
+    height: 12px;
+    background: #c61c1d;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.slider::-ms-track {
+    background: transparent; /* Hide default styling */
+    border-color: transparent;
+    color: transparent;
+}
+
+.slider::-ms-fill-lower {
+    background: linear-gradient(90deg, #c61c1d, #c61c1d);
+    border-radius: 5px;
+}
+
+.slider::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    background: #c61c1d;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+

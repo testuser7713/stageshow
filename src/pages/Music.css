@@ -1,0 +1,540 @@
+.music_page {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+.top_sec {
+    background-color: #000000;
+    position: relative;
+    height: auto;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.radio {
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #ffe4b5; 
+    box-shadow: 0 0 30px rgb(249, 242, 43);
+    border-radius: 50%; 
+    outline: none; 
+    background-color: white; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    margin: 10px; 
+}
+
+/* When the radio button is selected */
+.radio:checked {
+    background-color: #fcffb4;
+    width: 20px;
+    height: 20px; 
+    box-shadow: 0 0 5px rgba(255, 226, 82, 0.7); /* Add a glow effect */
+}
+
+/* Add hover effect */
+.radio:hover {
+    background-color: #fcffb4; /* Slightly darker purple */
+    border-color: #f0e9ff; /* Light purple background */
+}
+.name {
+    margin-bottom: 2px;
+    color: #8c52ff;
+}
+
+.occupation {
+    font-style: italic;
+    margin-top: 2px;
+    color: black;
+}
+
+.full_carousal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 55vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+    position: relative;
+
+}
+
+div.item {
+    text-align: center;
+    padding: 0px;
+    border: 0px solid black;
+    border-radius: 0px;
+    background-color: #fff;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-11deg * var(--r)))
+    translateX(calc(-200px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    pointer-events: auto;
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+}
+div.item:nth-of-type(2) {
+    --offset: 2;
+}
+div.item:nth-of-type(3) {
+    --offset: 3;
+}
+div.item:nth-of-type(4) {
+    --offset: 4;
+}
+div.item:nth-of-type(5) {
+    --offset: 5;
+}
+
+input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+}
+
+input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+}
+
+input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+}
+
+input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+}
+
+input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+}
+
+.arrow {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    pointer-events: auto;
+    font-size: 2rem; /* Adjust size as needed */
+    cursor: pointer;
+    z-index: 10; /* Ensure arrows are above other elements */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for exact centering */
+
+    color: white;
+}
+
+.arrow.left {
+    left: 0rem; /* Adjust this value to place the arrow */
+}
+
+.arrow.right {
+    right: 0rem; /* Adjust this value to place the arrow */
+}
+
+.arrow:hover {
+    color: #dec32a;
+}
+
+.arrow:focus {
+    border: none;
+    outline: none !important;
+}
+
+
+/* BOTTOM SEC START */
+
+.music_bottom {
+    padding: 0rem 2rem;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /*display: grid;
+    grid-template-columns: 60% 40%;*/
+}
+
+@font-face {
+    font-family: 'Inlander';
+    src: url('../fonts/InlanderoutlineDemo-axG8K.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Burnt {
+    font-family: 'Inlander';
+    font-size: 3rem;
+    padding-top: 1rem;
+    color: #e82d08;
+    text-shadow:
+        0 0 10px #e82d08,
+        0 0 0px #c75139;
+}
+
+.burnt_s {
+    color: #e82d08;
+    text-shadow:
+        0 0 10px #e82d08,
+        0 0 0px #c75139;
+}
+
+.burnt_s p:hover {
+    color: #e82d08;
+    cursor: pointer;
+    text-shadow:
+        0 0 20px #e82d08,
+        0 0 100px #c75139;
+}
+
+@font-face {
+    font-family: 'SixCaps';
+    src: url('../fonts/SixCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Ignition {
+    font-family: 'SixCaps';
+    font-size: 6rem;
+    line-height: 0;
+    padding-top: 1rem;
+    letter-spacing: 10px;
+    color: #f38383;
+    text-shadow: 
+        0 0 0px #ff2d2d,  /* Core glow */
+        0 0 0px #ff2d2d, 
+        0 0 0px #ff2d2d, 
+        0 0 0px #ff0000,  /* Stronger outer glow */
+        0 0 0px #ff0000, 
+        0 0 10px #ff0000; /* Farther diffuse glow */
+}
+
+@font-face {
+    font-family: 'BigShoulder';
+    src: url('../fonts/BigShouldersDisplay-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+.Lost_2 {
+    font-family: 'BigShoulder';
+    font-size: 4rem;
+
+    line-height: normal;
+    margin-top: 8rem;
+    letter-spacing: 4px;
+    font-weight: normal;
+    color: rgb(244, 200, 181); /* Orange color */
+    text-shadow: 
+        0 0 10px #ff7200,
+        0 0 5px #ffae42,
+        0 0 10px #ff7200;
+}
+
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url('../fonts/AnkaCoder-r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Surged {
+    font-family: 'AnkaCoder';
+    color: #f5f5bb; 
+    font-size: 3.5rem;
+    line-height: normal;
+    font-weight: 700; 
+    text-shadow: 
+        0 0 10px #ffff66,
+        0 0 20px #ffff66,
+        0 0 30px #ffaa00;
+}
+
+@font-face {
+    font-family: 'Alatsi';
+    src: url('../fonts/Alatsi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Obituary {
+    font-family: 'Alatsi';
+    color: #cfe7ff; 
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1rem; 
+    line-height: normal;
+    padding-top: 1rem;
+    text-shadow: 
+        0 0 5px #8fabff,
+        0 0 10px #8f9eff,
+        0 0 15px #6333ff;
+}
+
+.lost_desc_con_p {
+    margin-top: -2rem;
+} 
+
+.music_desc_con_p, .lost_desc_con_p {
+    font-family:'Antonio';
+    font-size: 1.5rem;
+    padding: 0;
+    color: white;
+    text-shadow: none;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.burnt_s, .ignition_s, .lost_s, .surged_s, .obituary_s {
+    list-style: none;
+    font-family:'Antonio';
+    font-size: 1.5rem;
+    padding: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.streaming {
+    padding: 2rem 4rem;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.stream_con {
+    border: 1px solid yellow;
+    border-radius: 10px;
+    padding: 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream_icons_con {
+    display: flex;
+    justify-content: center;
+}
+
+.stream_text {
+    font-family: 'Antonio';
+    justify-self: center;
+    color: #ffe9c0;
+    font-size: 2.5rem;
+    text-shadow:
+        0 0 0px #de9e2a,
+        0 0 5px #de9e2a,
+        0 0 5px #de9e2a,
+        0 0 10px #de9e2a,
+        0 0 25px #de9e2a,
+        0 0 0px #f5cb7f,
+        0 0 0px #f5cb7f,
+        0 0 0px #f5cb7f;
+}
+
+.stream_icons {
+    padding: 0 0rem;
+    color: #f5cb7f;
+    font-family: 'Antonio';
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream_icons div:hover {
+    color: #ec9f10;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.stream_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.icon {
+    padding-right: 0.6rem;
+    font-size: 1.5rem;
+}
+
+/* Position the audio player relative to the carousel */
+.audio_player_con {
+    position: absolute; /* Allow positioning relative to the carousel */
+    top: 75%; /* Adjust based on how far down from the center image you want the player */
+    left: 50%; /* Center horizontally */
+    transform: translate(-35%, -50%); /* Center alignment */
+    z-index: 5; /* Ensure it stays above the carousel items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fine-tune the styling of the audio player */
+.audio_player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px; /* Match carousel image size if needed */
+    max-width: 500px; /* Optional: Add a maximum width for responsiveness */
+    background-color: rgba(0, 0, 0, 0.8); /* Match carousel theme */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 1rem; /* Adjust padding as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+
+
+.player_but {
+    background-color: none;
+    color: white;
+}
+
+.player_but:hover {
+    cursor: pointer;
+    color:#e82d08;
+    transition: ease-in-out;
+}
+
+.player_but_con {
+    background-color: none;
+    all: unset;
+}
+
+.custom-progress {
+    color: red;
+}
+
+.custom-progress {
+    appearance: none; /* Remove default styling */
+    height: 6px; /* Adjust height as needed */
+    background: #e0e0e0; /* Track background color */
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.custom-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, #ff5733, #ff5733); /* Track gradient color */
+    border-radius: 5px;
+    height: 6px;
+}
+
+.custom-progress::-webkit-slider-thumb {
+    appearance: none; /* Remove default thumb styling */
+    width: 12px;
+    height: 12px;
+    background: #ff5733; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff; /* Optional border */
+    margin-top: -3px; /* Center the thumb */
+}
+
+.custom-progress::-moz-range-track {
+    background: linear-gradient(90deg, #ff5733, #ff5733);
+    border-radius: 5px;
+    height: 6px;
+}
+
+.custom-progress::-moz-range-thumb {
+    height: 12px;
+    background: #ff5733;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.custom-progress::-ms-track {
+    background: transparent; /* Hide default styling */
+    border-color: transparent;
+    color: transparent;
+}
+
+.custom-progress::-ms-fill-lower {
+    background: linear-gradient(90deg, #ff5733, #ff5733);
+    border-radius: 5px;
+}
+
+.custom-progress::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    background: #ff5733;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.music_merch_right_con {
+    font-family: 'Antonio';
+}
+
+.poll_con {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.poll {
+    width: 75%;
+}

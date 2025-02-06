@@ -1,0 +1,156 @@
+.cart-icon {
+    position: fixed;
+    top: 7.8rem;
+    right: 2.5rem;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000000000;
+    color: white;
+  }
+
+  .shop_bag {
+    position: -webkit-sticky;
+    top: 5rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000000000;
+    color: white;
+  }
+  
+  .cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000000001;
+  }
+  
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 10000001;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart-modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cart-modal ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart_item {
+    margin-bottom: 15px;
+  }
+  
+  .cart-modal .total-price {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .close-button:hover {
+    cursor: pointer;
+    color: red;
+  }
+  
+.item_details {
+    padding-left: 10px;
+}
+
+
+
+
+  .cart_img {
+    width: 45%;
+  }
+
+  .cart_item {
+    display: flex;
+  }
+
+  .price_con {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+
+  .trash {
+    padding-top: 16px;
+    padding-left: 5px;
+    padding-right: 3px;
+  }
+
+  .your_cart_text {
+    font-family: 'Antonio';
+  }
+  .cart_item_con, .total-price, .proceed {
+    font-family: 'Antonio';
+
+  }
+
+  .total-price , .proceed{
+    font-size: larger;
+  }
+
+  .trash_con:hover {
+    cursor: pointer;
+    color: red;
+    transition: 0.3s ease-in-out;
+  }
+
+  .proceed_but_con {
+    justify-content: center;
+    display: flex;
+  }
+  .proceed {
+    justify-self: center;
+    margin-top: 1rem;
+    box-shadow: none;
+    color: black;
+    background: none;
+    height: 3rem;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(255, 239, 159);
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .proceed:hover {
+    margin-top: 1rem;
+    box-shadow: none;
+    color: black;
+    background: none;
+    height: 3rem;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(255, 213, 159);
+    border: none;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    outline: inherit;
+  }
+

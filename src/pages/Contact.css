@@ -1,0 +1,377 @@
+*{
+  box-sizing: border-box;
+
+}
+@font-face {
+  font-family: 'Antonio';
+  src: url('../fonts/Antonio-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.inquiry_text {
+  font-size: 3rem; /* Adjust size */
+  font-family: 'Antonio'; /* Match your fonts */
+
+  color: #f5cb7f;
+
+  text-shadow:
+      0 0 0px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 8px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 0px #f5cb7f,
+      0 0 0px #f5cb7f,
+      0 0 0px #f5cb7f;
+  line-height: 0;
+  padding-bottom: 1rem;
+
+}
+
+.contact_page {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100vw;
+  background-color: black;
+  font-family: 'Antonio';
+}
+
+.contact_container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 5rem;
+}
+
+.contact_left {
+  padding: 2rem;
+}
+
+.contact_right {
+  padding: 2rem;
+}
+
+.form {
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+
+}
+
+.input_label {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.entry_field {
+  margin-bottom: 1rem;
+}
+
+
+
+.input_con {
+  padding: 8px 20px;
+  margin: 0.5rem 0;
+  background-color: #333333;
+  width: 90%;
+
+
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input, .subject {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #333333;
+  color: white;
+}
+
+
+
+.button {
+  width: 100%;
+  padding: 10px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: #c5161d;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #961015;
+  border: 1px solid #ccc;
+  transition: 0.2s ease-in;
+
+}
+
+.contact_after {
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+}
+
+.contact_after p {
+  font-size: 1.2rem;
+}
+
+.contact_after button{
+  margin-top: 2rem;
+  text-align: center;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #c5161d;
+  color:white;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact_after button:hover{
+  background-color: #961015;
+  border: 1px solid black;
+  transition: 0.2s ease-in;
+
+}
+
+.contact_right {
+  color: white;
+}
+
+.contact_heading {
+  font-size: 2rem; /* Adjust size */
+  font-family: 'Antonio', sans-serif; /* Match your fonts */
+
+  color: #f5cb7f;
+
+  text-shadow:
+      0 0 0px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 8px #de9e2a,
+      0 0 0px #de9e2a,
+      0 0 0px #f5cb7f,
+      0 0 8px #f5cb7f,
+      0 0 0px #f5cb7f;
+  line-height: 0.5;
+  padding-bottom: 0rem;
+}
+
+.social_links li{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.social_links a{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.social_row {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social_row:hover {
+  cursor: pointer;
+  color:#de9e2a;
+  transition: 0.3s ease-in-out;
+}
+
+.contact_p {
+  font-size: larger;
+}
+
+.contact_p:hover {
+  cursor: pointer;
+  color:#de9e2a;
+  transition: 0.3s ease-in-out;
+}
+
+.tab_buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab_button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.tab_button.active {
+  background-color: #555;
+  color: white;
+}
+
+.tab_content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+/* old stuff */
+
+
+
+.order_type, .payment_type, .discount_con {
+  background-color: #ffc33c;
+  font-family: 'Antonio';
+
+}
+
+.payment input {
+  background-color: transparent;
+}
+
+
+.options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  justify-content: space-around;
+  height: 2.5rem;
+  font-family: 'Antonio';
+
+}
+
+
+
+
+
+.delivery_btn.active1, .pickup_btn.active1 {
+  background-color: #f8fadb;
+  border: 4px;
+}
+
+.pickup_btn1.active4, .delivery_btn1.active3 {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f8fadb;
+  cursor: pointer;
+}
+
+
+
+.delivery_con, .pickup_con {
+  margin-bottom: 2rem;
+}
+
+.delivery_btn, .pickup_btn, .delivery_btn1, .pickup_btn1 {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ffc33c;
+  cursor: pointer;
+}
+
+
+
+
+.pickup_radio, .delivery_radio, .giftCard_radio, .creditCard_radio {
+  margin-right: .5rem;
+  appearance: none;
+  width: 10px; 
+  height: 10px; 
+  border: 2px solid #ffe4b5; 
+  box-shadow: 0 0 30px rgb(249, 242, 43);
+  border-radius: 50%; 
+  outline: none; 
+  background-color: white; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+
+
+
+.delivery_btn_con1, .pickup_btn_con1 {
+  border-radius: 20px;
+  height: 3rem;
+
+}
+
+
+
+.delivery_btn_con1 button, .pickup_btn_con1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+.pickup_time {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.pickup_time select{
+  width: 12rem;
+}
+
+.pickup_text{
+  align-self: center;
+}
+
+.pickup_grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.pickup_name, .pickup_contact {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.pickup_name input, .pickup_contact input{
+  margin-top: 0.5rem;
+  height: 30px;
+}
+
+
+
+
+
+
+
