@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Background from "../assets/stage_background.svg"
+//import Background from "../assets/stage_background.svg"
 import Band_Sil from "../assets/band_sil (2).png"
 import Flame from "../assets/new_flame.png"
 import album1 from "../assets/albums.png"
